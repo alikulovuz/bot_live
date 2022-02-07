@@ -6,15 +6,15 @@ from aiogram import Bot, Dispatcher
 from aiogram.bot.api import TelegramAPIServer
 from aiogram.dispatcher.webhook import configure_app
 
-from bot.configreader import load_config, Config
-from bot.commandsworker import set_bot_commands
-from bot.handlers.unsupported_reply import register_admin_reply_handler
-from bot.handlers.admin_no_reply import register_admin_no_reply_handlers
-from bot.handlers.usermode import register_usermode_handlers
-from bot.handlers.adminmode import register_adminmode_handlers
-from bot.handlers.bans import register_bans_handlers
-from bot.handlers.common import register_common_handlers
-from bot.updatesworker import get_handled_updates_list
+from configreader import load_config, Config
+from commandsworker import set_bot_commands
+from unsupported_reply import register_admin_reply_handler
+from admin_no_reply import register_admin_no_reply_handlers
+from usermode import register_usermode_handlers
+from adminmode import register_adminmode_handlers
+from bans import register_bans_handlers
+from common import register_common_handlers
+from updatesworker import get_handled_updates_list
 
 
 async def main():
