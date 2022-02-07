@@ -8,12 +8,12 @@ from aiogram.dispatcher.webhook import configure_app
 
 from configreader import load_config, Config
 from commandsworker import set_bot_commands
-from unsupported_reply import register_admin_reply_handler
-from admin_no_reply import register_admin_no_reply_handlers
-from usermode import register_usermode_handlers
-from adminmode import register_adminmode_handlers
-from bans import register_bans_handlers
-from common import register_common_handlers
+from handlers.unsupported_reply import register_admin_reply_handler
+from handlers.admin_no_reply import register_admin_no_reply_handlers
+from handlers.usermode import register_usermode_handlers
+from handlers.adminmode import register_adminmode_handlers
+from handlers.bans import register_bans_handlers
+from handlers.common import register_common_handlers
 from updatesworker import get_handled_updates_list
 
 
